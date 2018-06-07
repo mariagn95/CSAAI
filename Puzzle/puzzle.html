@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/puzzle.js"></script>
+    <script src="javascript/fotos_random.js"></script>
+    <script src="javascript/cronometro.js"></script>
+    <title>Puzzle</title>
+  </head>
+  <body style="background-image:url('puzzle.jpg')" onload="cargando()">
+    <div id="encabezado">
+      <strong><p id="titulo">PUZZLE</p></strong>
+    </div>
+    <button id="cambiar" onclick="cambiarImagenes()">
+      Cambiar imagenes
+    </button>
+    <button id="records" onclick="puzzle.mostrarRecords()">
+      Ver records
+    </button>
+    <div id="imagenes">
+      <img id="i1" src="#" onclick="seleccionar(this)">
+      <img id="i2" src="#" onclick="seleccionar(this)">
+      <img id="i3" src="#" onclick="seleccionar(this)">
+      <img id="completa" src="#">
+    </div>
+    <div id="container">
+      <canvas id="tablero" onclick="puzzle.mover(event)"></canvas>
+    </div>
+    <div id="contenedor">
+  		<strong><span id="Horas">00:</span>
+  		<span id="Minutos">00:</span>
+  		<span id="Segundos">00</span></strong>
+  	</div>
+    <div id="formulario">
+      <p> Escribe tu nombre: </p>
+      <form id="name">
+        <label><input type="text" id="nick" /></label>
+        <input type="button" value="Enviar" onclick="puzzle.mensajeVictoria()"/>
+      </form>
+    </div>
+    <div id="tablaRecord"></div>
+  </body>
+</html>
