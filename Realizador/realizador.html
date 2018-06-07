@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/realizador.js"></script>
+    <title>Realizador</title>
+  </head>
+  <body style="background-image:url('fondo.jpeg')">
+    <div class="titulo">
+      90's
+    </div>
+    <div id="container">
+      <video id="video1" src="#" loop></video>
+      <video id="video2" src="videos/1.mp4" onclick="cambiar(this)" loop muted></video>
+      <video id="video3" src="videos/2.mp4" onclick="cambiar(this)" loop muted></video>
+      <video id="video4" src="videos/3.mp4" onclick="cambiar(this)" loop muted></video>
+      <video id="video5" src="videos/4.mp4" onclick="cambiar(this)" loop muted></video>
+      <button id="Play" onclick="play()"><strong>Play/Pause</strong></button>
+      <strong><div id="reloj"></div></strong>
+    </div>
+  </body>
+</html>

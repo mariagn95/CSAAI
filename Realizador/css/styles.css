@@ -1,0 +1,42 @@
+@font-face {
+  font-family: coiny;
+  src: url('lib/coiny-regular.ttf');
+}
+
+.titulo {
+  font-family: coiny;
+  text-align: center;
+  font-size: 450%;
+  color: #00FF00;
+  text-shadow: 5px 5px 5px grey;
+  margin-top: 2%;
+}
+
+#video2, #video3, #video4, #video5 {
+  width: 20%;
+  margin-top: 2.5%;
+}
+
+#video1{
+  width: 100%;
+}
+
+
+#container{
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#reloj{
+  background-color: white;
+  padding: 4%;
+  font-size: 150%;
+}
+
+#Play{
+  font-size: 150%;
+  color: red;
+  border: 2px solid black;
+}
